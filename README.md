@@ -41,8 +41,8 @@ cd foodshield-ai
 npm install
 
 # Configure environment
-cp .env.example .env
-# Edit .env and add your GEMINI_API_KEY
+cp .env.example .env.local
+# Edit .env.local and add your API keys
 
 # Start development server
 npm run dev
@@ -52,10 +52,12 @@ Open [http://localhost:3000](http://localhost:3000) to see the platform.
 
 ### Environment Variables
 
-Create a `.env` file in the root directory:
+Create a `.env.local` file in the root directory:
 
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
+GOOGLE_API_KEY=your_google_api_key_here
+OPENWEATHER_API_KEY=your_openweather_api_key_here
 ```
 
 ## 📁 Project Structure
